@@ -211,7 +211,7 @@ export default class BonificacaoExportar extends Vue {
                 this.excelBase = null
             })
         } catch (error: any) {
-            CommonModule.showMessage({message: error.response.data.error, type: 'error'})
+            CommonModule.showMessage({message: 'Ocorreu um erro ao tentar importar', type: 'error'})
             this.excelBase = null
         } finally {
             this.loadingExcelBase = false
