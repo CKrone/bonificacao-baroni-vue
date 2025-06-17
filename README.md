@@ -4,10 +4,6 @@ O projeto consiste em uma camada de back-end: https://github.com/CKrone/bonifica
 Tem como objetivo gerar um excel com o valor médio e a quantidade de venda a partir do relatório de vendas em PDF.
 O projeto foi criado por mim a fim de ajudar um colega no preenchimento dos dados. Já está em uso a mais de 1 ano.
 
-## Aprendendo Laravel
-
-Para fins de estudo, resolvi recriar o projeto em Laravel e usando Docker.
-
 ## Problema
 
 A empresa possui um sistema para gerar bonificação para o vendedor. Então a colaborador baixava do sistema o relatório de vendas do vendedor específico,
