@@ -10,7 +10,6 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
   components: {
-    HelloWorld,
   },
 })
 export default class HomeView extends Vue {}
