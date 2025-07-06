@@ -130,7 +130,7 @@ export default class BonificacaoExportar extends Vue {
             this.relatorioProdutos = response.data
             await this.exportar()
         } catch (error: any) {
-            CommonModule.showMessage({message: error.response.data.error, type: 'error'})
+            CommonModule.showMessage({message: error.response.data.message, type: 'error'})
             this.relatorioPdf = null
         } finally {
             this.loading = false
@@ -211,7 +211,7 @@ export default class BonificacaoExportar extends Vue {
                 this.excelBase = null
             })
         } catch (error: any) {
-            CommonModule.showMessage({message: 'Ocorreu um erro ao tentar importar', type: 'error'})
+            CommonModule.showMessage({message: error.response.data.message, type: 'error'})
             this.excelBase = null
         } finally {
             this.loadingExcelBase = false
